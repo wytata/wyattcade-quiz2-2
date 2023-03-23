@@ -38,7 +38,7 @@ int main(void)
     if (pid2 == 0) {
         //Child 2
         printf("Running child process PID: %d\n", getpid());
-        const char* file = "/home/wyatt/bin/echoall";
+        const char* file = "echoall";
         const char* spyro = "Spyro";
         execlp(file, file, spyro, NULL);
         exit(0);
